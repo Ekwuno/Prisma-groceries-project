@@ -10,6 +10,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+// Define your own datamodels here and run `yarn prisma generate` to generate Prisma Client.
 model Grocery {
   id         Int   @id @default(autoincrement())
   image       String?
