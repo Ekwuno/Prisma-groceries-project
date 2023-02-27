@@ -1,4 +1,4 @@
-import Head from "next/head"
+import Head from "next/head";
 import { FaShoppingBag } from "react-icons/fa";
 import Link from "next/link";
 
@@ -33,10 +33,14 @@ const Layout = ({ children }) => {
 							</div>
 						</div>
 					</header>
+					<main className="flex-grow container mx-auto">
+						<div className="px-4 py-12">{children}</div>
+					</main>
 				</div>
-				<>
+
+				{/* <>
 				{children}
-				</>
+				</> */}
 			</div>
 		</>
 	);
