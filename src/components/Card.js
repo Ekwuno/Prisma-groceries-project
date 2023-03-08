@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const Card = ({
 	id = "",
@@ -8,22 +8,21 @@ const Card = ({
 	description = "",
 	price = 0,
 	bags = 0,
-	onClickFavorite = () => null,
 }) => {
 	return (
 		<Link href={`/grocery/${id}`} legacyBehavior>
 			<a className="block w-full">
 				<div className="relative">
-					<div className="bg-gray-200 rounded-lg shadow overflow-hidden aspect-w-16 aspect-h-9">
-						{image ? (
+					<div className="bg-black-200 rounded-lg shadow overflow-hidden aspect-w-16 aspect-h-9">
+						{/* {image ? (
 							<Image
 								src={image}
 								alt={title}
-								fill="fill"
-								objectFit="cover"
+								layout="fill"
+                                objectFit="cover"
 								className="hover:opacity-80 transition"
 							/>
-						) : null}
+						) : null} */}
 					</div>
 					<button
 						type="button"
@@ -54,7 +53,7 @@ const Card = ({
 						style: "currency",
 						currency: "USD",
 					}).format(price ?? 0)}{" "}
-					<span className="text-gray-500">/night</span>
+					<span className="text-gray-500">/item</span>
 				</p>
 			</a>
 		</Link>

@@ -19,14 +19,14 @@ const Layout = ({ children }) => {
 									<a className="flex items-center space-x-1">
 										<FaShoppingBag className="shrink-0 w-8 h-8 text-slate-900" />
 										<span className="text-xl font-semibold tracking-wide">
-											Grocery<span className="text-slate-700">store</span>
+											Grocery<span className="text-slate-700">List</span>
 										</span>
 									</a>
 								</Link>
 								<div className="flex items-center space-x-4">
 									<Link href="/create" legacyBehavior>
 										<a className="hidden sm:block hover:bg-gray-200 transition px-3 py-1 rounded-md">
-											Add new stuff
+											Add new item
 										</a>
 									</Link>
 								</div>
